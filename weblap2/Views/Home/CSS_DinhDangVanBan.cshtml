@@ -1,0 +1,96 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thực hành CSS - Định dạng văn bản</title>
+    <style>
+        /* Ví dụ 1: Highlight */
+        .hl_yellow {
+            background-color: yellow;
+        }
+
+        .hl_aqua {
+            background-color: Aqua;
+        }
+
+        /* Ví dụ 2: Link */
+        a.mystyle:link {
+            color: #ff0000;
+            text-decoration: none;
+        }
+
+        a.mystyle:visited {
+            color: #0000ff;
+            text-decoration: none;
+        }
+
+        a.mystyle:hover {
+            color: #ffff00;
+            background: #66ff66;
+            text-decoration: underline;
+        }
+
+        /* Ví dụ 3: Gạch ngang */
+        .linethrough {
+            text-decoration: line-through;
+        }
+
+        /* Ví dụ 4: Thụt đầu dòng */
+        p {
+            text-indent: 2.5em;
+            margin-top: 0;
+        }
+
+            p.noindent {
+                text-indent: 0;
+                margin-top: 0;
+            }
+
+        /* Ví dụ 5: Tooltip */
+        .define {
+            cursor: help;
+            border-style: dotted;
+            border-width: 1px;
+            background-color: #FFE4C4;
+        }
+
+        /* Ví dụ 6: Drop Cap */
+        .dropcap {
+            float: left;
+            color: #4E544A;
+            font-size: 5em;
+            line-height: 70px;
+            padding-top: 2px;
+            font-family: Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>THỰC HÀNH CSS - ĐỊNH DẠNG VĂN BẢN</h2>
+    <hr />
+
+    <h3>Ví dụ 1: Highlight văn bản</h3>
+    <p>Đây là đoạn <span class="hl_yellow">văn bản</span> được <span class="hl_aqua">highligh</span></p>
+
+    <h3>Ví dụ 2: Định dạng cho link</h3>
+    <p><a class="mystyle" href="#">test my link style</a></p>
+
+    <h3>Ví dụ 3: Gạch ngang</h3>
+    <p>Đây là đoạn văn bản bị <span class="linethrough">gạch ngang</span> chữ</p>
+
+    <h3>Ví dụ 4: Thụt đầu dòng</h3>
+    <p>Đoạn văn bản này có dòng đầu thụt vào một khoảng 2.5 kích thước font chữ hiện tại</p>
+    <p class="noindent">Đoạn văn bản này không bị thụt vào ở dòng đầu tiên</p>
+
+    <h3>Ví dụ 5: Tooltip từ viết tắt</h3>
+    <p><span class="define" title="Cascading Style Sheet">CSS</span> là viết tắt của Cascading Style Sheets.</p>
+
+    <h3>Ví dụ 6: Drop Cap</h3>
+    <p><span class="dropcap">Đ</span>ây là đoạn văn bản có ký tự đầu tiên được drop cap</p>
+
+</body>
+</html>

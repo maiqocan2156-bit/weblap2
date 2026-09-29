@@ -1,0 +1,38 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    #menu {
+        width: 200px;
+    }
+
+        #menu a, #menu a:visited {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            background-color: #9ab;
+            color: #fff;
+            width: 10em;
+            border: 2px solid #fff;
+            border-color: #def #678 #345 #cde;
+            padding: 0.4em;
+            margin: 0.5em auto;
+            font-weight: bold;
+        }
+
+            #menu a:hover {
+                top: 2px;
+                left: 2px;
+                border-color: #345 #cde #def #678;
+            }
+</style>
+
+<div id="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">History</a>
+    <a href="#">Team</a>
+    <a href="#">Offices</a>
+</div>
